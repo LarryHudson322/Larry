@@ -1,0 +1,49 @@
+<style color="green">
+
+</style>
+<style color="red">
+  h1 {
+    font-family: verdana;
+  }
+  p {
+    color: blue;
+  }
+  .secondary {
+    color:red;
+  }
+
+  .big {
+    font-family:fantasy;
+  }
+html{
+  box-sizing: border-box;
+}
+*{
+  border: 2px solid red;
+}
+div {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+div {
+    padding: 5px 10px 5px 10px;
+}
+div {
+    padding: 5px 10px;
+}
+div {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+div {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+  .important {
+    color: orange;
+  }
+</style>
