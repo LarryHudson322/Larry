@@ -46,4 +46,10 @@ div {
   .important {
     color: orange;
   }
+  h1{
+    color: rgb(50,205, 50);
+  }
+  body{
+    background-color:yellow;
+  }
 </style>
