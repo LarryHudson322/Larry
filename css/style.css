@@ -1,3 +1,8 @@
+.container{
+  max-width: 680;
+  background-color: green;
+  margin: 0 auto;
+}
 <style color="green">
 
 </style>
@@ -5,6 +10,7 @@
   h1 {
     font-family: italic;
   }
+
   p {
     color: blue;
   }
@@ -52,4 +58,7 @@ div {
   body{
     background-color:yellow;
   }
+  .element {
+  background-image: url(/images/image.svg);
+}
 </style>
