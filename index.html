@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <style color="green">
   body{
     background-color:yellow;
@@ -18,7 +19,6 @@
   <center>  <a href="../index.html">Home</a> |
     <a href="../projects/index.html">Projects</a> |
     <a href="../contact/index.html">Contact</a> |
-    <a href="../greeter/greeter.html">Greeter</a>|
     <a href="../blog/index.html">Blog</a> |
     <a href="/Media">Media</a> |</center>
   </nav>
@@ -82,6 +82,21 @@
 <!-- for your landing page -->
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <body>
+  <script type="text/javascript">
+  var name = prompt('What is your name?');
+
+  var checkName = function(){
+    if(name === "") {
+      name = prompt('What is your name, for real this time?');
+
+      checkName(); // repeats until a name exists
+    }
+  }
+
+  checkName(); // kicks off the name-checking the first time
+
+  alert('Hello ' + name);
+</script>
   <!--This is Larry Hudson's page hope you like my code-->
 <br>  <center><img src="IMG_2319.jpg" alt="" width="60%"></center>
 
