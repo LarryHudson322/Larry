@@ -8,7 +8,7 @@
 </style>
 <style color="red">
   h1 {
-    font-family: italic;
+    font-family: cursive;
   }
 
   p {
@@ -61,4 +61,8 @@ div {
   .element {
   background-image: url(/images/image.svg);
 }
+nav a {margin: 55px;
+
+}
+
 </style>
