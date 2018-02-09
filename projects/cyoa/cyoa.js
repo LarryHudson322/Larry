@@ -1,9 +1,14 @@
-var response = prompt("You walk into the house and your wife didn't cook. Type 'BK' to go to Burger King , type 'SS' to go to Stake a Shake");
+var name = prompt('What is your name?');
 
-if(response === "BK"){
-    response = prompt("You go the Burger king with out her");
-} else if (response === "SS") {
-    response = prompt("You go to Stake a Shake");
+
+
+alert('Hello ' + name);
+var response = prompt("You walk into techtown class and one guy tells the other guy he looks like his father. Type 'yes' if they need a DNA test, type 'no' if the DNA will not help");
+
+if(response === "yes"){
+    response = prompt("You may be a dead beat dad!!!! You are Dante");
+} else if (response === "no") {
+    response = prompt("You just look like someone else");
 } else {
-    alert("Enjoy your meal by yourself!");
+    alert("Enjoy your meal");
 }
