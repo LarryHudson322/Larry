@@ -7,10 +7,11 @@ if(rng > 0.66) {
     computerChoice = "P";
 } else if (rng > 0.33) {
     computerChoice = "S";
+
 }
 
 
-var userWins = "You win!";
+var userWins = "You WIN!";
 var computerWins = "The computer wins!";
 
 if(computerChoice !== userChoice){
@@ -39,7 +40,7 @@ if(computerChoice !== userChoice){
 
 var userWins = "You win!";
 var computerWins = "The computer wins!";
-var roundCounter = 0;
+var roundCounter = 2;
 
 var gameRound = function(){
     var userChoice = prompt("Choose Rock, Paper, or Scissors by typing 'R', 'P', or 'S'");
@@ -77,7 +78,7 @@ var gameRound = function(){
     }
 };
 
-while (roundCounter < 5) {
-    gameround();
+while (roundCounter < 4) {
+    gameRound();
     roundCounter++;
 }
