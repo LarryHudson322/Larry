@@ -69,7 +69,10 @@ img#header-image {
     border-radius: 35%;
     box-shadow: 10px 10px 5px grey;
     }
-
+    img#dog-image {
+        border-radius: 35%;
+        box-shadow: 5px 5px 5px white;
+        }
 
 h1 {
     color: white;
@@ -87,4 +90,4 @@ h1 {
     margin: 3px 2px;
     cursor: pointer;
 
-</style>
+  </style>

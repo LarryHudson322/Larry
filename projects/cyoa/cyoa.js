@@ -3,12 +3,13 @@ var name = prompt('What is your name?');
 
 
 alert('Hello ' + name);
-var response = prompt("You walk into techtown class and one guy tells the other guy he looks like his father. Type 'yes' if they need a DNA test, type 'no' if the DNA will not help");
+var response = prompt("You walk into your home and a light was on and window was open. Type 'go' if you want to go in, type 'no' if you call for help");
 
-if(response === "yes"){
-    response = prompt("You may be a dead beat dad!!!! You are Dante's father");
+if(response === "go"){
+    response = prompt("You walk in to find that there is someone waiting on you");
 } else if (response === "no") {
-    response = prompt("You just look like someone else");
+    response = prompt("You call the for someone to come and walk in with you");
+
 } else {
-    alert("Enjoy your meal");
+    alert("You find Dante HACKING into your computer!!!");
 }
