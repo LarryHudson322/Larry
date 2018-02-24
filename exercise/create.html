@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<nav>
+<center>
+<!--  <button>Home</button>
+<a href="home" class="button">Home</a>
+<button class="button">Button</button>
+<input type="button" class="button" value="Input Button">-->
+  <button>
+  <a href="../index.html"class="button">Home</a> |
+  <a href="../projects/index.html"class="button">Projects</a> |
+  <a href="../contact/index.html"class="button">Contact</a> |
+  <a href="../blog/index.html"class="button">Blog</a> |
+  <a href="/Media"class="button">Media</a> |</center></button>
+</nav>
+
+
+<style>
+* {box-sizing: border-box;}
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+</style>
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+
+</script>
+
+
+<style color="green">
+  h1{
+    font-family: cursive;
+  }
+  p {
+    color: blue;
+  }
+  col
+  .secondary {
+    color:red;
+  }
+
+  .big {
+    font-family:cursive;
+  }
+  html{
+    box-sizing: border-box;
+  }
+*{
+  border: 10px;
+  border-radius: 75px;
+}
+div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+body{
+  background-color:yellow;
+}
+body{
+  font-family:  cursive;
+}
+
+div {
+    padding: 5px 10px 5px 10px;
+}
+div {
+    padding: 5px 10px;
+}
+div {
+    box-sizing: border-box;
+    width: 0px;
+    height: 0px;
+}
+div {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+}
+  .important {
+    color: orange;
+  }
+</style>
+
+
+</head>
+
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<body>
+
+<h2 align="center">Hello World This Is </h2>
+<h1 align="center">Larry Hudson's page</h1>
+
+<p>Click and slide the blue slider to see the two images:</p>
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+  <center>  <img src="while/img_1853.jpg" width="500" height="500">  </center>
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <center>  <img src="while/20140827_140938.jpg" width="500" height="500">  </center>
+  </div>
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+
+<!--<h3><p align="right">Years end is neither an end nor a beginning but a going on,<br> with all the wisdom that experience can instill in us. Cheers <br>to a new year and another chance for us to get it right.</p></h3>-->
+<h3><ul align="center">
+  <li>comment 1</li>
+  <li>comment 2</li>
+  <li>comment 3</li>
+  <li>comment 4</li>
+</ul></h3>
+
+
+
+<br><br><br>
+
+<h2 align="center">Contact Me:</h2>
+<p align="center"><!--<a href="https://www.eventbrite.com/d/fl--port-st.-lucie/new-years-eve-parties/">Port Saint Lucie FL.</a><br>
+<!--This is Larry Hudson's page jope you like it once again-->
+
+<a href="http://www.instagram.com/LHudson3222">Instagram</a><br>
+<a href="https://plus.google.com/u/0/">Google Plus</a><br>
+<!--  <a href="mailto:lhudson322@gmail.com">Email</a>  <br>-->
+<a href="mailto:lhudson322@gmail.com">Email</a> <br>
+<a href="tel:423-777-9311">My REAL phone number.</a></p><br><br>
+
+@ 2018 LJH
+</body>
+</html>

@@ -89,5 +89,10 @@ h1 {
     font-size: 20px;
     margin: 3px 2px;
     cursor: pointer;
+}
+.highlighted{
+  background-color: blue;
+  
+}
 
   </style>

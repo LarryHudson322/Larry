@@ -11,6 +11,9 @@
   }
 
   </style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
   <link type="text/css" rel="stylesheet" href="../css/style.css"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,17 +55,19 @@
     <li><a href="https://twp2studentshowcase.netlify.com/">Class Showcase</a> </li>
      <li> <a href="cyoa">Choose Your Own Adventure</script></li>
      <li>Web Store Hack-A-Thon</li>
-    </ol>
+   </ol>
   <!--<img id="dog-image" src="IMG_2319.jpg" alt="Rocky" width="30%">-->
-  <br>
 
-<ol>
-  <li>https://getbootstrap.com/docs/4.0/components/jumbotron/</li>
-  <li>https://www.w3schools.com/bootstrap/default.asp</li>
-  <li>https://unsplash.com/</li>
-  <li>https://www.google.com/doodles/celebrating-50-years-of-kids-coding</li>
-  <li>https://www.youtube.com/watch?v=eg1-8ts9cFc</li>
-</ol>
+
+<ul>
+  <li><a href="https://getbootstrap.com/docs/4.0/components/jumbotron/">Getbootstrap</a></li>
+  <li><a href="https://www.w3schools.com/bootstrap/default.asp">W3schools</a></li>
+  <li><a href="https://unsplash.com/">Unsplash</a></li>
+  <li><a href="https://www.google.com/doodles/celebrating-50-years-of-kids-coding">Kids Coding</a></li>
+  <li><a href="https://www.youtube.com/watch?v=eg1-8ts9cFc">Youtube Classes</a></li>
+  <li><a href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">jQuery</script></li>
+  <li><a href="https://javascript.info/array">Javascript Info</a></li>
+</ul>
 
 
 
@@ -78,7 +83,40 @@
 <a href="mailto:lhudson322@gmail.com">Email</a> <br>
   <a href="tel:423-777-9311">My REAL phone number.</a><br><br>
 
+<footer text-align:center>
   @ 2018 LJH
+</footer>
 
+<script>
+
+$('h1').on('mouseover', () => {
+  $('h1').addClass('highlighted')
+})
+$('h1').on('mouseleave', () => {
+  $('h1').removeClass('highlighted')
+})
+
+
+
+$('li').on('mouseover', function highlight(){ // notice: no arrow function!
+  $(this).addClass('highlighted')
+})
+$('li').on('mouseleave', function highlight(){
+  $(this).removeClass('highlighted')
+})
+
+
+//$('#profile-pic').on('click', () => {
+  //$('#hidden-blurb').slideDown(); // only works if #hidden-blurb has display:none; in its CSS
+//});
+
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
