@@ -92,7 +92,14 @@ h1 {
 }
 .highlighted{
   background-color: blue;
-  
+  width: 20%;
 }
 
+ h1:hover{
+  background-color: blue;
+  width: 35%;
+}
+ul{
+  width:650px;
+}
   </style>
