@@ -1,40 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classes And Ids</title>
+    <link type="text/css" rel="stylesheet" href="classesyideas.css">
+<style media="screen">
 
 
-  <link type="text/css" rel="stylesheet" href="../css/style.css"/>
-  <title>Choose-Your-Own-Adventure</title>
+      *{
+          margin: 0;
+          padding: 0;
+       }
+      #header{
+          background-color: red;
+          height: 250px;
+          width:100%;
+      }
+
+      #header ul{
+          width: 300px;
+          background-color: yellow;
+      }
+
+      #header ul li:hover{
+          background-color: green;
+          width: 25%;
+
+      }
+      #side-nav{
+          background-color: blue;
+          width: 25%;
+          height: 400px;
+          float:left;
+      }
+      #main-content{
+          background-color: green;
+          float:right;
+          width: 75%;
+          height: 600px;
+
+      }
+
+      .sm-img{
+          width: 150px;
+          height: 150px;
+          float:left;
+          margin-right: 10px;
+          margin-left: 10px;
+      }
+
+      .lrg-text{
+          font-size: 48px;
+
+      }
+
+      .container{
+          width: 100%;
+          background-color: yellow;
+          margin-bottom: 10px;
+      }
+
+  </style>
+
 </head>
 <body>
-<h1>Choose-Your-Own-Adventure</h1><br><br>
-<ul>
-  <li>EXERCISE 1</li>
-  <li>EXERCISE 2</li>
-  <li>EXERCISE 3</li>
-  <li>EXERCISE 4</li>
-  <li>EXERCISE 5</li>
-  <li>EXERCISE 6</li>
-</ul>
+  <div id="header">
+    <h1>Header</h1>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+  </div>
+  <div id="side-nav">
+    <h1>Side Nav</h1>
+  </div>
+  <div id="main-content">
+    <h1>Main Content</h1>
+    <div class="container" >
+      <img src="300.png" class="sm-img">
+      <p class="lrg-text">This is some random ass text.This is some random ass text.This is some random ass text.</p>
+    </div>
 
-<script text=JavaScript src="while.js">
+    <div class="container" >
+      <img src="300.png" class="sm-img">
+      <p class="lrg-text">This is some random ass text.This is some random ass text.This is some random ass text.</p>
+    </div>
 
-</script>
+  </div>
 
-
-<br><br>
-<a href="https://www.eventbrite.com/d/fl--port-st.-lucie/new-years-eve-parties/">Port Saint Lucie FL.</a><br>
-<!--This is Larry Hudson's page jope you like it once again-->
-<a href="http://www.instagram.com/LHudson3222">Instagram</a><br>
-<a href="https://plus.google.com/u/0/">Google Plus</a><br>
-<!--  <a href="mailto:lhudson322@gmail.com">Email</a>  <br>-->
-<a href="mailto:lhudson322@gmail.com">Email</a> <br>
-<a href="tel:423-777-9311">My REAL phone number.</a><br><br>
-
-@ 2018 LJH
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-var response = prompt("You walk into Techtown and Chris is telling people to sign up for a new coding class. Type'y' if you want to sign up , Type 'n' if you dont wont to.");
+var response = prompt("You walk into Techtown and  is telling people to sign up for a new coding class. Type'y' if you want to sign up , Type 'n' if you dont wont to.");
 
 if(response === "y"){
     response = prompt("You know how to code with out any help. Type 'y' if you are confident Type 'n' if are not ready.");
