@@ -1,0 +1,71 @@
+* {
+  background-color: OliveDrab ;
+}
+
+p {
+  font-size: 5.2vw;
+  text-transform: uppercase;
+  font-family: 'Nosifer', cursive;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5.2vh;
+}
+
+#title1:hover {
+  color: red;
+  text-shadow: 0 0 30px blue;
+}
+
+#title2:hover {
+  color: blue;
+  text-shadow: 0 0 30px red;
+}
+
+#title3:hover {
+  color: green;
+  text-shadow: 0 0 30px orange;
+}
+
+#title4:hover {
+  color: white;
+  text-shadow: 0 0 30px cyan;
+}
+
+#title5:hover {
+  color: lime;
+  text-shadow: 0 0 30px lime;
+}
+
+#title6:hover {
+  color: yellow;
+  text-shadow: 0 0 30px yellow;
+}
+#title1:hover {
+  color: red;
+  text-shadow: 0 0 30px blue;
+}
+
+#title2:hover {
+  color: blue;
+  text-shadow: 0 0 30px red;
+}
+
+#title3:hover {
+  color: green;
+  text-shadow: 0 0 30px orange;
+}
+
+#title4:hover {
+  color: white;
+  text-shadow: 0 0 30px cyan;
+}
+
+#title5:hover {
+  color: orange;
+  text-shadow: 0 0 30px lime;
+}
+
+#title6:hover {
+  color: yellow;
+  text-shadow: 0 0 30px yellow;
+}

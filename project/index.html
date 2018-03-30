@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CYOA page</title>
+  <link type="text/css" rel="stylesheet" href="1css/style.css"/>
+</head>
+
+<body>
+
+<h1 class="proj1">Choose Your Own Adventure</h1>
+
+<!-- <button type="btn2" name="button"><a href="file:///C:/Users/TechTown/Code/SavvyCoders/DemoNight/larry/index.html"><h1>Home</h1></a></button> -->
+<button style="background-color:transparent" class="btn showcase"> <a href="file:///C:/Users/TechTown/Code/SavvyCoders/DemoNight/larry/index.html">Home</a></button>
+</div>
+<div class="pong1">
+</div>
+
+  <p style="color:white">
+    <span id="title1">S</span>
+    <span id="title2">M</span>
+    <span id="title3">I</span>
+    <span id="title4">L</span>
+    <span id="title5">E</span>
+  </p>
+  <p style="color:white">
+    <span id="title1">Y</span>
+    <span id="title2">O</span>
+    <span id="title3">U</span>
+  </p>
+
+  <p style="color:white">
+    <span id="title1">M</span>
+    <span id="title2">A</span>
+    <span id="title3">D</span>
+    <span id="title4">E</span>
+  </p>
+  <p style="color:white">
+  <span id="title4">I</span>
+  <span id="title5">T</span>
+  <span id="title5">!</span>
+</P>
+</body>
+
+<script type="text/javascript">
+ var name = prompt('What is your name?');
+
+ var checkName = function(){
+   if(name === "") {
+     name = prompt('What is your name, for real this time?');
+
+     checkName(); // repeats until a name exists
+   }
+ }
+
+ checkName(); // kicks off the name-checking the first time
+
+ alert('Hello ' + name);
+</script>
+
+<script text=JavaScript src="cyoa.js">
+<link type="text/css" rel="stylesheet" href="1css/style.css"/>
+</script>
+</html>

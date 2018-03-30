@@ -1,0 +1,67 @@
+/* @import url('https://fonts.googleapis.com/css?family=Butcherman'); */
+
+$blue-color:#3A9FDA;
+$teal-darken-color:#3C454F;
+$white-color:#ffffff;
+$bg-image:url("https://tce-live2.s3.amazonaws.com/media/media/be7a97e5-19d2-4df5-b348-a549dd5b3fe7.jpg");
+$background-trans-white-color:rgba(blue);
+
+
+@media screen and (min-width:601px) {
+  html{
+    font-size:2rem;
+  }
+}
+
+
+
+
+body{
+  text-align:center;
+  background-image:$bg-image;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center bottom;
+  padding:15px;
+  background-color: lime;
+}
+
+.blog-page-headline{
+  font-family: 'Butcherman', cursive;
+  font-size:2.5rem;
+  color:white;
+  text-shadow:5px 5px 5px rgba(0,0,0,.5);
+}
+
+.blog-wrapper{
+   font-size:16px; // reset the root font size on blog wrapper
+   margin: 0px auto;
+   max-width:960px;
+   text-align:left;
+   padding:2.2em;
+   color:$teal-darken-color;
+   background-color:$background-trans-white-color;
+   border:1.2em solid white;
+    .blog-article{
+      margin-bottom:100px;
+         .blog-date{
+           color:$blue-color;
+           }
+
+         .blog-quote{
+            padding-left:1.2em;
+            border-left:5px solid #C1C7CB;
+          }
+    }/*.blog-article*/
+
+
+
+}/*.blog-wrapper*/
+
+
+footer{
+  font-size:16px;
+  color:white;
+  margin-top:15px;
+}

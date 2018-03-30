@@ -1,0 +1,256 @@
+
+body,html{
+  height: 100%;
+  margin:0%;
+  font-size:16px;
+  font-family: "itim;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Navigation */
+
+nav{
+    background-color: black;
+    color: #fff;
+    width:1200px;
+    margin: 0 auto;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  nav ul li{
+    float:left;
+    width:200px;
+    height:50px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+    /* height: inherit; */
+    display: block;
+    /* opacity: 0.70; */
+  }
+
+  nav ul li a:hover{
+    background-color: green;
+  }
+
+  nav ul li ul{
+    position: relative;
+    display: none;
+
+  }
+
+  nav ul li:hover ul{
+    display:block;
+  }
+/* End of main Navigation */
+
+/* Images */
+
+.ping1, .ping2, .ping3{
+  position: relative;
+  opacity: 0.90;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+ z-index: -1;
+}
+/* added Images */
+.ping1{
+  background-image: url('../photos1/img_aeae.jpg');
+  min-height: 100%;
+}
+.ping2{
+  background-image: url('../photos1/larry-01.jpg');
+  min-height: 400px;
+}
+.ping3{
+  background-image: url('../photos1/img_lance.jpg');
+  min-height: 400px;
+}
+.ping4{
+  background-image: url('../photos1/Caden.jpg');
+  min-height: 400px;
+}
+
+/* set the text to a area */
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+/* set the background color for text to a dark and light grey*/
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+/* positioned the ptext */
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fffff;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border{
+  background-color: none;
+  color: black;
+  padding: 20px;
+}
+
+.ptext .border .trans{
+  background-color: transparent;
+}
+.ptext1{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fffff;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext1 .border{
+  background-color: none;
+  color: black;
+  padding: 20px;
+}
+
+.ptext1 .border .trans{
+  background-color: transparent;
+}
+
+.ptext1{
+  color: yellow;
+}
+
+/* to make good for mobile devces */
+@media (max-width:568px){
+  .ping1, .ping2, .ping3{
+    background-attachment: scroll;
+  }
+}
+
+.button {
+  color:white;
+}
+.button:hover {
+  color:green;
+}
+
+/* On mouse-over */
+.btn:hover {color: green;}
+
+.showcase {color: white;}
+.choose {color: white;}
+.rock {color: white;}
+.cyoa {color: white;}
+.Blog {color: white;}
+.Media {color: white;}
+
+
+
+/* On mouse-over */
+/* .btn:hover {background: none;}
+
+.showcase {color: white;}
+.choose {color: white;}
+.rock {color: white;}
+.cyoa {color: white;}
+.Blog {color: white;}
+.Media {color: white;} */
+
+
+
+.scrollup {
+  display: clear;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: green;
+  color: #fff;
+  opacity: 0.5;
+  z-index: 9999;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+/* <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+}
+.tip{
+  position: center;
+}
+</style>
+$color: #2194E0;
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  } */
