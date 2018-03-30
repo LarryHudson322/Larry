@@ -208,6 +208,9 @@ nav{
 .scrollup:hover {
   opacity: 1;
 }
+.test{
+  display: inline;
+}
 
 /* <style>
 body {font-family: Arial, Helvetica, sans-serif;}
